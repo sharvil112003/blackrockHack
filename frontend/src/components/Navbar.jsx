@@ -66,6 +66,9 @@ const Navbar = () => {
                 : "opacity-0 -translate-x-full"
             }`}
           >
+            <div className="flex items-center ml-4 lg:ml-0 lg:flex-shrink-0">
+              <GoogleTranslate />
+            </div>
             <div className="flex flex-col lg:flex-row lg:items-center lg:mx-10">
               <Link
                 to="/"
