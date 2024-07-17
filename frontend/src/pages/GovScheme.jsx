@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import schemeData from '../../data/schemeData'; // Assuming schemeData.jsx is in the correct path
-import "./GovScheme.css"; // Import your CSS file for styling
+import schemeData from '../data/schemeData'; // Assuming schemeData.jsx is in the correct path
+import "../components/componentCSS/GovScheme.css"; // Import your CSS file for styling
 
 const GovScheme = () => {
   const [searchQuery, setSearchQuery] = useState("");

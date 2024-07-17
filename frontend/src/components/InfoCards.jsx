@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './InfoCards.css';
+import './componentCSS/InfoCards.css';
 import { Navigate, useNavigate } from 'react-router-dom';
 
 const InfoCards = () => {

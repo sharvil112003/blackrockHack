@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import scholarshipData from '../../data/scholarshipData'
-import './scholarship.css'
+import scholarshipData from '../data/scholarshipData'
+import '../components/componentCSS/scholarship.css'
 
 const scholarship = () => {
     const [searchTerm, setSearchTerm] = useState('');
