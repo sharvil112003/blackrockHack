@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import GoogleTranslate from "./GoogleTranslate.jsx"; // Import the GoogleTranslate component
+import GoogleTranslate from "./GoogleTranslate.jsx";
+import logo from "../assets/logo.png";
+import "./GoogleTranslate.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +13,7 @@ const Navbar = () => {
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <Link to="#">
-              <img
-                className="w-auto h-10 sm:h-8s"
-                src="https://margshala.com/wp-content/uploads/2023/08/Margshala-Logo.png"
-                alt="Logo"
-              />
+              <img className="w-auto h-10 sm:h-8s" src={logo} alt="Logo" />
             </Link>
             {/* Mobile menu button */}
             <div className="flex lg:hidden">
@@ -100,9 +98,9 @@ const Navbar = () => {
                 Login
               </Link>
               {/* Google Translate dropdown */}
-              {/* <div className="flex items-center ml-4">
+              <div className="flex items-center ml-4">
                 <GoogleTranslate />
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

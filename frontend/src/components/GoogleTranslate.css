@@ -1,0 +1,5 @@
+/* Hide the "Powered by Google Translate" text */
+.goog-logo-link,
+.goog-te-gadget .goog-te-combo+div {
+    display: none !important;
+}
