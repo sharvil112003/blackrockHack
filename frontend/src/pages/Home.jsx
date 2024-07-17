@@ -12,7 +12,6 @@ const Home = () => {
     <div>
       <Carousel data={slides} />
       <InfoCards />
-      <button onClick={() => {navigate("/mandi-prices")}}>Go to Mandi Prices</button>
       <Footer />
     </div>
   );

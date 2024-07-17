@@ -31,7 +31,6 @@ const InfoCards = () => {
                     </li>
                 ))}
             </ul>
-            <h3 className="made_by">Made with ♡</h3>
         </div>
     );
 };
