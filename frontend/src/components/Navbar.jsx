@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import GoogleTranslate from "./GoogleTranslate.jsx";
 import logo from "../assets/logo.png";
-import "./GoogleTranslate.css";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +66,7 @@ const Navbar = () => {
                 : "opacity-0 -translate-x-full"
             }`}
           >
-            <div className="flex flex-col -mx-4 lg:flex-row lg:items-center lg:mx-6">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:mx-10">
               <Link
                 to="/"
                 className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -74,28 +74,34 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="AgriROI"
+                to="/mandi-prices"
                 className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                AgriROI
+                MarketPrices
               </Link>
               <Link
-                to="/GovScheme"
+                to="/govtschemes"
                 className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                GovScheme
+                Govt Schemes
               </Link>
               <Link
-                to="/Courses"
+                to="/investments"
                 className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                Inves
+                Investment Plans
               </Link>
               <Link
-                to="/Login"
-                className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                to="/login"
+                className="bg-black px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 Login
+              </Link>
+              <Link
+                to="/signup"
+                className="bg-black px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                SignUp
               </Link>
             </div>
           </div>

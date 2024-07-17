@@ -1,15 +1,12 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Home from "./components/pages/Home";
-import { Login } from "./components/pages/Login";
-import JobDetail from "./components/jobDetails";
-import AgriROI from "./components/pages/AgriROI";
-import GovScheme from "./components/pages/GovScheme";
-import { Signup } from "./components/pages/Signup";
-import Courses from "./components/pages/Inves";
+import Home from "./pages/Home";
+import { Login } from "./pages/Auth/Login";
+import { Signup } from "./pages/Auth/Signup";
 import MandiPrices from "./components/MandiPrices";
-import Scholarship from "./components/pages/Scholarship";
+import Scholarship from "./pages/Scholarship";
+import GovScheme from "./pages/GovScheme"
 
 function App() {
   return (
@@ -19,12 +16,9 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Login" element={<Login />} />
         <Route exact path="/Signup" element={<Signup />} />
-        <Route exact path="/AgriROI" element={<AgriROI />} />
-        <Route exact path="/GovScheme" element={<GovScheme />} />
-        <Route exact path="/Courses" element={<Courses />} />
+        <Route exact path="/govtschemes" element={<GovScheme />} />
         <Route path="/mandi-prices" element={<MandiPrices />} />
         <Route exact path="/scholarship" element={<Scholarship />} />
-        <Route path="/job/:id" element={<JobDetail />} />
       </Routes>
     </BrowserRouter>
   );

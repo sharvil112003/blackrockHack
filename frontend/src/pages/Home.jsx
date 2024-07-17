@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Carousel from '../Carousel';
-import Footer from '../Footer';
-import { slides } from '../../data/carouselData.json';
-import InfoCards from '../InfoCards';
+import Carousel from '../components/Carousel';
+import Footer from '../pages/Footer';
+import InfoCards from '../components/InfoCards';
+import { slides } from '../data/carouselData.json';
 
 const Home = () => {
   const navigate = useNavigate();

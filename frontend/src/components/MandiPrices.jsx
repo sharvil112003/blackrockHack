@@ -8,18 +8,19 @@ const MandiPrices = () => {
 
   useEffect(() => {
     const fetchPrices = async () => {
-      const apiKey = '579b464db66ec23bdd0000017d72d78d4fcc4b856c37415a08163429'; // Replace with your actual API key
+      const apiKey = '579b464db66ec23bdd0000017d72d78d4fcc4b856c37415a08163429'; 
       const url = 'https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070';
       const params = {
         'api-key': apiKey,
         'format': 'json',
         'offset': 0,
-        'limit': 1000, // Adjust the limit as needed
+        'limit': 100, // Adjust the limit as needed
       };
 
       try {
         const response = await axios.get(url, { params });
-        console.log('API response:', response.data); // Log the response data
+        console.log('API response:', response.data.records); // Log the response data
+        console.log(response.data)
         setPrices(response.data.records);
         setLoading(false);
       } catch (err) {
