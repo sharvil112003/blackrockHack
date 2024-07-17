@@ -100,12 +100,11 @@ const Navbar = () => {
               >
                 Login
               </Link>
-              <Link
-                to="/signup"
-                className="bg-black px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                SignUp
-              </Link>
+
+              <div className="flex items-center ml-4 lg:ml-0 lg:flex-shrink-0">
+                <GoogleTranslate />
+              </div>
+
             </div>
           </div>
         </div>
