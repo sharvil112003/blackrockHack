@@ -97,10 +97,6 @@ const Navbar = () => {
               >
                 Login
               </Link>
-              {/* Google Translate dropdown */}
-              <div className="flex items-center ml-4">
-                <GoogleTranslate />
-              </div>
             </div>
           </div>
         </div>

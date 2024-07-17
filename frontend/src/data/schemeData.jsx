@@ -1,4 +1,4 @@
-[
+const schemeData = [
     {
       "id": 1,
       "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
@@ -315,3 +315,5 @@
         "applicationlink": "https://www.telangana.gov.in/"
     }
       ]
+
+export default schemeData;

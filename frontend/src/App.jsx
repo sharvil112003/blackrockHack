@@ -8,6 +8,7 @@ import AgriROI from "./components/pages/AgriROI";
 import GovScheme from "./components/pages/GovScheme";
 import { Signup } from "./components/pages/Signup";
 import Courses from "./components/pages/Inves";
+import Scholarship from "./components/pages/Scholarship";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/AgriROI" element={<AgriROI />} />
         <Route exact path="/GovScheme" element={<GovScheme />} />
         <Route exact path="/Courses" element={<Courses />} />
+        <Route exact path="/scholarship" element={<Scholarship />} />
         <Route path="/job/:id" element={<JobDetail />} />
       </Routes>
     </BrowserRouter>
