@@ -52,15 +52,15 @@ function Footer() {
         {/* <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
         <h4 className="text-xl font-bold tracking-tight text-white sm:text-xl ">Links</h4>
           <div className="grid grid-cols-1 gap-x-8 gap-y-3 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-            {/* {links.map((link) => (
+             {links.map((link) => (
               <p>
               <a key={link.name} href={link.href}>
                 {link.name} <span aria-hidden="true">&rarr;</span>
               </a>
               </p>
-            ))} */}
+            ))}
           </div>
-        </div> */}
+        </div>  */}
       </div>
     </div>
   )
