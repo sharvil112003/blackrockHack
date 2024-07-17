@@ -4,6 +4,15 @@ import { Link } from "react-router-dom";
 import "./InfoCards.css";
 
 const InfoCards = () => {
+  const [clickCard, setClickCard] = useState();
+  const Navigate = useNavigate();
+  const handleClick = (index) => {
+    console.log(`Clicked card ${index}`);
+    if (index === 3) {
+      Navigate("/scholarship");
+    }
+  };
+
   return (
     <div className="main">
       <ul className="cards">
@@ -37,7 +46,6 @@ const InfoCards = () => {
           </li>
         ))}
       </ul>
-      <h3 className="made_by">Made with ♡</h3>
     </div>
   );
 };
