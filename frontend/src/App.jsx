@@ -8,6 +8,7 @@ import AgriROI from "./components/pages/AgriROI";
 import GovScheme from "./components/pages/GovScheme";
 import { Signup } from "./components/pages/Signup";
 import Courses from "./components/pages/Inves";
+import CropModelPage from "./components/pages/cropModel";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/GovScheme" element={<GovScheme />} />
         <Route exact path="/Courses" element={<Courses />} />
         <Route path="/job/:id" element={<JobDetail />} />
+        <Route exact path="/cropModel" element={<CropModelPage />} />
       </Routes>
     </BrowserRouter>
   );
