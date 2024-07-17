@@ -1,28 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./componentCSS/GoogleTranslate.css";
 
 const GoogleTranslate = () => {
-  const [isScriptLoaded, setIsScriptLoaded] = useState(false);
-
   useEffect(() => {
-    if (!isScriptLoaded) {
-      const script = document.createElement("script");
-      script.src =
-        "http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate";
-      script.async = true;
+    const script = document.createElement("script");
+    script.src =
+      "http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate";
+    script.async = true;
 
-      script.onerror = () => {
-        console.error("Error loading Google Translate script.");
-      };
+    script.onerror = () => {
+      console.error("Error loading Google Translate script.");
+    };
 
-      document.body.appendChild(script);
-      setIsScriptLoaded(true);
+    document.body.appendChild(script);
 
-      return () => {
-        document.body.removeChild(script);
-      };
-    }
-  }, [isScriptLoaded]);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   window.loadGoogleTranslate = () => {
     if (window.google && window.google.translate) {

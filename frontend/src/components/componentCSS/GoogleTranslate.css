@@ -1,42 +1,5 @@
-.goog-logo-link {
-  display: none !important;
-  margin: 0;
-  padding: 0;
-}
-
-.goog-te-gadget {
-  color: transparent !important;
-  margin: 0;
-  padding: 0;
-  display: inline-flex; /* Ensure inline behavior for centering */
-  align-items: center; /* Center button content vertically */
-}
-
-.goog-te-gadget .goog-te-combo {
-  color: black !important;
-  height: 25px; /* Adjust height as needed */
-  background: #fff; /* Set background color for better visibility */
-  border: 1px solid #ddd; /* Add a subtle border */
-  border-radius: 3px; /* Add rounded corners for a polished look */
-  padding: 0 5px; /* Add some padding for better readability */
-  cursor: pointer; /* Indicate interactivity with a cursor */
-  margin-left: -5px;
-}
-
-.VIpgJd-ZVi9od-l4eHX-hSRGPd {
-  display: none;
-  margin: 0;
-  padding: 0;
-}
-
-.google-translate-button {
-  text-align: center; /* Center text within the button */
-  margin: auto; /* Center button horizontally within the navbar */
-  padding: 0; /* Reset any default padding */
-  display: inline-flex; /* Ensure inline behavior for centering */
-}
-
-/* Additional styling for improved appearance (optional): */
-.google-translate-button .goog-te-combo {
-  font-size: 14px; /* Adjust font size as needed */
+/* Hide the "Powered by Google Translate" text */
+.goog-logo-link,
+.goog-te-gadget .goog-te-combo+div {
+    display: none !important;
 }

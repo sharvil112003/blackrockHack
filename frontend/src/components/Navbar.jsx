@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import GoogleTranslate from "./GoogleTranslate.jsx";
 import logo from "../assets/logo.png";
-import './componentCSS/GoogleTranslate.css'
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,9 +66,6 @@ const Navbar = () => {
                 : "opacity-0 -translate-x-full"
             }`}
           >
-            <div className="google-translate-button">
-              <GoogleTranslate />
-            </div>
             <div className="flex flex-col lg:flex-row lg:items-center lg:mx-10">
               <Link
                 to="/"

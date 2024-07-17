@@ -1,5 +1,3 @@
-import GoogleTranslate from "../components/GoogleTranslate";
-
 const links = [
   { name: 'Jobs', href: '/Khojshala' },
   { name: 'Posts', href: '/Swarozgar' },
