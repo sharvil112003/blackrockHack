@@ -14,7 +14,7 @@ const MandiPrices = () => {
         'api-key': apiKey,
         'format': 'json',
         'offset': 0,
-        'limit': 1000, // Adjust the limit as needed
+        'limit': 100, // Adjust the limit as needed
       };
 
       try {
