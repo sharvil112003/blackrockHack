@@ -9,6 +9,7 @@ import GovScheme from "./components/pages/GovScheme";
 import { Signup } from "./components/pages/Signup";
 import Courses from "./components/pages/Inves";
 import MandiPrices from "./components/MandiPrices";
+import Scholarship from "./components/pages/Scholarship";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/GovScheme" element={<GovScheme />} />
         <Route exact path="/Courses" element={<Courses />} />
         <Route path="/mandi-prices" element={<MandiPrices />} />
+        <Route exact path="/scholarship" element={<Scholarship />} />
         <Route path="/job/:id" element={<JobDetail />} />
       </Routes>
     </BrowserRouter>
