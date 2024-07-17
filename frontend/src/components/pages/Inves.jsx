@@ -1,5 +1,5 @@
-import React from 'react';
-import CourseCard from '../CourseCard';
+import React from "react";
+import CourseCard from "../CourseCard";
 
 const Courses = () => {
   return (
@@ -10,4 +10,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default Courses;

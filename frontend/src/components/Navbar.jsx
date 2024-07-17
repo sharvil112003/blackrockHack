@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
-import {Link} from 'react-router-dom'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import GoogleTranslate from "./GoogleTranslate.jsx";
+import logo from "../assets/logo.png";
+import "./GoogleTranslate.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="relative bg-white shadow dark:bg-gray-800">
-      <div className="container px-6 py-8 mx-auto">
+      <div className="container px-4 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <Link to="#">
-              <img
-                className="w-auto h-10 sm:h-8s"
-                src="https://margshala.com/wp-content/uploads/2023/08/Margshala-Logo.png"
-                alt="Logo"
-              />
+              <img className="w-auto h-10 sm:h-8s" src={logo} alt="Logo" />
             </Link>
             {/* Mobile menu button */}
             <div className="flex lg:hidden">
@@ -61,46 +60,47 @@ const Navbar = () => {
 
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
           <div
-            className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
-              isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
+            className={`absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
+              isOpen
+                ? "translate-x-0 opacity-100"
+                : "opacity-0 -translate-x-full"
             }`}
           >
-            <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
+            <div className="flex flex-col -mx-4 lg:flex-row lg:items-center lg:mx-6">
               <Link
                 to="/"
-                className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 Home
               </Link>
               <Link
-                to="/Jobs"
-                className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                to="AgriROI"
+                className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-               Jobs
+                AgriROI
               </Link>
               <Link
-                to="/Swarozgar"
-                className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                to="/GovScheme"
+                className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                Swarozgar Fellowship
+                GovScheme
               </Link>
               <Link
                 to="/Courses"
-                className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                Courses
+                Inves
               </Link>
               <Link
                 to="/Login"
-                className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="px-2 py-2 mx-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 Login
               </Link>
-              
-            </div>
-
-            <div className="flex items-center mt-4 lg:mt-0">
-              
+              {/* Google Translate dropdown */}
+              <div className="flex items-center ml-4">
+                <GoogleTranslate />
+              </div>
             </div>
           </div>
         </div>
