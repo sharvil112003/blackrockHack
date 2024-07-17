@@ -1,12 +1,11 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import { Login } from "./pages/Auth/Login";
 import { Signup } from "./pages/Auth/Signup";
 import MandiPrices from "./components/MandiPrices";
 import Scholarship from "./pages/Scholarship";
-import Chatbot from "./components/Chatbot";
 import GovScheme from "./pages/GovScheme"
 
 function App() {
