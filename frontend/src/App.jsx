@@ -1,18 +1,21 @@
 import './App.css'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aef0e009e16662ccbee3931bbafd536c65bf37e
 import Navbar from './components/Navbar'
-// import Footer from './components/Footer'
-// import {slides} from './data/carouselData.json'
 import { Routes,Route, BrowserRouter } from 'react-router-dom'
 import Home from './components/pages/Home'
 import { Login } from './components/pages/Login'
 import JobDetail from './components/jobDetails'
 import Jobs from './components/pages/Jobs'
 import Swarozgar from './components/pages/Swarozgar'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aef0e009e16662ccbee3931bbafd536c65bf37e
 import { Signup } from './components/pages/Signup'
 import Courses from './components/pages/Courses'
-// import Mentors from './components/Mentors'
 
 
 function App() {

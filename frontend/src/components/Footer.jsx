@@ -43,19 +43,13 @@ function Footer() {
         />
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Contact</h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-          xyz@xyz.com
-          </p>
-          <p className=" text-lg leading-8 text-gray-300">
-          +91 XXXXXXXXXX
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-          Margshala Foundation, Plot 2A, 1st Floor, Khasra 294, Kehar Singh Estate, Saidulajab, Lane Number 2, New Delhi - 110030 ©2023 Margshala Foundation
+        <div className="mx-auto max-w-5xl lg:mx-0">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-6xl">About Us</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-300" style={{fontFamily:'Poppins'}}>
+          At AgriFinance, we are committed to revolutionizing agricultural finance by empowering farmers with innovative technological solutions. Our platform offers crop prediction, land lending, investment schemes, and benefits for farmers' children, all designed to enhance productivity and promote financial inclusion in the agricultural sector. Join us in creating a sustainable and prosperous future for our farmers.
           </p>
         </div>
-        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        {/* <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
         <h4 className="text-xl font-bold tracking-tight text-white sm:text-xl ">Links</h4>
           <div className="grid grid-cols-1 gap-x-8 gap-y-3 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {/* {links.map((link) => (
@@ -66,7 +60,7 @@ function Footer() {
               </p>
             ))} */}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
