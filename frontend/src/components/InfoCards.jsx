@@ -1,22 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
-import "./InfoCards.css";
+import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import "./componentCSS/InfoCards.css";
 
 const InfoCards = () => {
-    const [clickCard, setClickCard] = useState();
-    const Navigate=useNavigate();
-    const handleClick = (index) => {
-        console.log(`Clicked card ${index}`);
-        if(index===3)
-        {
-            Navigate('/scholarship')
-        }
-        if(index===0)
-            {
-                Navigate('/cropForm')
-            }
-    };
+  const [clickCard, setClickCard] = useState();
+  const Navigate = useNavigate();
+  const handleClick = (index) => {
+    console.log(`Clicked card ${index}`);
+    if (index === 3) {
+      Navigate("/scholarship");
+    }
+    if (index === 0) {
+      Navigate("/cropForm");
+    }
+  };
 
   return (
     <div className="main">
@@ -25,7 +22,7 @@ const InfoCards = () => {
           <li className="cards_item" key={index}>
             <div className="card">
               {index === 0 ? (
-                <Link to="/cropModel">
+                <Link to="/cropForm">
                   <div className="card_image">
                     <img src={card.image} alt={`Card ${index}`} />
                   </div>

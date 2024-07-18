@@ -1,98 +1,220 @@
+/* Chatbot container */
 .chatbot-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  
-  .chatbot {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    width: 300px;
-    max-height: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-  
-  .chatbot.open {
-    display: flex;
-  }
-  
-  .chatbot-header {
-    background: #007BFF;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .chatbot-messages {
-    flex: 1;
-    padding: 10px;
-    overflow-y: auto;
-  }
-  
-  .message {
-    margin: 5px 0;
-  }
-  
-  .message.user {
-    text-align: right;
-    color: #007BFF;
-  }
-  
-  .message.bot {
-    text-align: left;
-    color: #555;
-  }
-  
-  .chatbot-input {
-    display: flex;
-    border-top: 1px solid #ddd;
-  }
-  
-  .chatbot-input input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-top: 1px solid #ddd;
-  }
-  
-  .chatbot-input button {
-    padding: 10px;
-    border: none;
-    background: #007BFF;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .chatbot-input button:hover {
-    background: #0056b3;
-  }
-  
-  .chatbot-icon {
-    padding: 15px;
-    border-radius: 50%;
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .chatbot-icon:hover {
-    background: #0056b3;
-  }
-  
-  .close-button {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  /* Ensure it's above other elements */
+}
+
+/* Chatbot icon/button */
+.chatbot-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  /* Adjust as needed */
+  width: 60px;
+  /* Reduced size */
+  height: 60px;
+  /* Reduced size */
+  font-size: 18px;
+  /* Adjust font size */
+  border-radius: 50%;
+  /* Circular shape */
+  background-color: #007bff;
+  /* Primary color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Box shadow for depth */
+}
+
+.chatbot-icon:hover,
+.chatbot-icon.highlight {
+  background-color: #0056b3;
+  /* Darker shade on hover or active state */
+}
+
+/* Chatbot popup */
+.chatbot {
+  width: 340px;
+  height: auto;
+  /* Let height adjust based on content */
+  max-height: 80vh;
+  /* Maximum height to avoid covering entire screen */
+  background-color: #ffffff;
+  /* White background */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  /* Box shadow for depth */
+  border-radius: 8px;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Hide overflow content */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  /* Smooth animation */
+}
+
+.chatbot.open {
+  transform: translateY(0);
+  /* Slide up animation when open */
+  opacity: 1;
+  /* Fully visible */
+}
+
+.chatbot.d-none {
+  transform: translateY(100%);
+  /* Slide down animation when closed */
+  opacity: 0;
+  /* Hidden */
+}
+
+/* Chatbot header */
+.chatbot .card-header {
+  background-color: #007bff;
+  /* Header background color */
+  color: #ffffff;
+  /* Text color */
+  padding: 10px 15px;
+  /* Padding */
+  position: relative;
+  /* Positioning context for close button */
+}
+
+.chatbot .card-header h5 {
+  margin: 0;
+  /* Remove margin */
+  font-size: 1.25rem;
+  /* Header font size */
+}
+
+/* Close button in header */
+.chatbot .btn-close {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  /* Button color */
+  background-color: transparent;
+  /* Transparent background */
+  border: none;
+  /* No border */
+  cursor: pointer;
+  /* Pointer cursor */
+  outline: none;
+  /* No outline */
+}
+
+.chatbot .btn-close span {
+  font-size: 1.5rem;
+  /* Adjust cross sign font size */
+}
+
+.chatbot .btn-close:hover {
+  color: #f00;
+  /* Red color on hover */
+}
+
+/* Chatbot messages */
+.chatbot .card-body {
+  max-height: 300px;
+  /* Maximum height for messages */
+  overflow-y: auto;
+  /* Scrollable messages */
+  padding: 15px;
+  /* Padding */
+}
+
+.chatbot .card-body .message {
+  margin-bottom: 10px;
+  /* Margin between messages */
+  padding: 8px 12px;
+  /* Padding */
+  border-radius: 4px;
+  /* Rounded corners */
+}
+
+.chatbot .card-body .message.user {
+  background-color: #f0f0f0;
+  /* User message background color */
+}
+
+.chatbot .card-body .message.bot {
+  background-color: #e5e5e5;
+  /* Bot message background color */
+}
+
+/* Chatbot input */
+.chatbot .card-footer {
+  padding: 15px;
+  /* Padding */
+  border-top: 1px solid #e5e5e5;
+  /* Top border */
+}
+
+.chatbot .card-footer .input-group {
+  display: flex;
+  /* Display as flexbox */
+  align-items: center;
+  /* Center items vertically */
+}
+
+.chatbot .card-footer input[type="text"] {
+  flex: 1;
+  /* Take remaining space */
+  margin-right: 10px;
+  /* Margin between input and button */
+  padding: 10px;
+  /* Padding */
+  border: 1px solid #ccc;
+  /* Border */
+  border-radius: 4px;
+  /* Rounded corners */
+  outline: none;
+  /* No outline */
+}
+
+.chatbot .card-footer button {
+  width: 70px;
+  /* Button width */
+  padding: 10px;
+  /* Padding */
+  border: none;
+  /* No border */
+  background-color: #007bff;
+  /* Button background color */
+  color: #ffffff;
+  /* Text color */
+  border-radius: 4px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor */
+  outline: none;
+  /* No outline */
+}
+
+.chatbot .card-footer button:hover {
+  background-color: #0056b3;
+  /* Darker shade on hover */
+}
+
+.chatbot-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  /* Adjust width as needed */
+  height: 80px;
+  /* Adjust height as needed */
+  font-size: 5.5rem;
+  /* Adjust button font size */
+}
+
+.chatbot-icon svg {
+  width: 70%;
+  /* Adjust icon size relative to button */
+  height: auto;
+}
