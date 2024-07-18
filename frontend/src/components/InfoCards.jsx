@@ -11,6 +11,10 @@ const InfoCards = () => {
         {
             Navigate('/scholarship')
         }
+        if(index===0)
+            {
+                Navigate('/cropForm')
+            }
     };
 
     return (

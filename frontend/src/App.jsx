@@ -7,6 +7,7 @@ import { Signup } from "./pages/Auth/Signup";
 import MandiPrices from "./components/MandiPrices";
 import Scholarship from "./pages/Scholarship";
 import GovScheme from "./pages/GovScheme"
+import CropForm from "./pages/CropForm";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/govtschemes" element={<GovScheme />} />
         <Route path="/mandi-prices" element={<MandiPrices />} />
         <Route exact path="/scholarship" element={<Scholarship />} />
+        <Route exact path="/cropForm" element={<CropForm />} />
       </Routes>
     </BrowserRouter>
   );

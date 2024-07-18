@@ -1,0 +1,82 @@
+.news-ticker {
+    width: 45%;
+    height: 400px; /* Adjust height as needed */
+    padding: 20px;
+    background-color: #f1f1f1;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .news-ticker h2 {
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: 1;
+  }
+  
+  .news-cards {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .news-cards:hover {
+    animation-play-state: paused;
+  }
+  
+  .news-cards::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .news-card {
+    display: flex;
+    align-items: center; /* Center align items */
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    height: 120px; /* Ensure card height is sufficient to display content */
+  }
+  
+  .news-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+  
+  .news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Allow content to take up remaining space */
+  }
+  
+  .news-content h3 {
+    margin: 0;
+    font-size: 1.1em; /* Slightly larger font */
+  }
+  
+  .news-content p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .news-content a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .news-content a:hover {
+    text-decoration: underline;
+  }
+  
