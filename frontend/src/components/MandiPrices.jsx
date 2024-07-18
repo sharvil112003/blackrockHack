@@ -253,9 +253,9 @@ const MandiPrices = () => {
             <th>Commodity</th>
             <th>Market</th>
             <th>State</th>
-            <th>Min Price</th>
-            <th>Max Price</th>
-            <th>Modal Price</th>
+            <th>Min Price (/qt)</th>
+            <th>Max Price (/qt)</th>
+            <th>Modal Price (/qt)</th>
           </tr>
         </thead>
         <tbody>

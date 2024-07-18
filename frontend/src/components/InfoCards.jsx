@@ -20,7 +20,6 @@ const InfoCards = () => {
           Navigate('/blogs');
         } 
       };
-  };
 
   return (
     <div className="main">
@@ -43,6 +42,7 @@ const InfoCards = () => {
     </div>
   );
 };
+
 
 const cardData = [
   {
