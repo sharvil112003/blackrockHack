@@ -11,6 +11,10 @@ const InfoCards = () => {
         {
             Navigate('/scholarship')
         }
+        if(index===1)
+        {
+            Navigate('/land')
+        }
     };
 
     return (
