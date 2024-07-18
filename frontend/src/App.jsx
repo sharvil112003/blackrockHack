@@ -6,7 +6,7 @@ import { Login } from "./pages/Auth/Login";
 import { Signup } from "./pages/Auth/Signup";
 import MandiPrices from "./components/MandiPrices";
 import Scholarship from "./pages/Scholarship";
-import GovScheme from "./pages/GovScheme"
+import GovScheme from "./pages/GovScheme";
 import CropForm from "./pages/CropForm";
 
 function App() {

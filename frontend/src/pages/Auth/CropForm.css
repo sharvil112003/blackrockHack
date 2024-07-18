@@ -1,0 +1,57 @@
+.crop-form-container {
+    max-width: 400px;
+    /* Reduced width */
+    margin: 20px auto;
+    /* Centered with some top margin */
+    padding: 20px;
+    border: 1px solid #2f2f2e;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a subtle shadow */
+}
+
+.crop-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.crop-form-container form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    /* Space between form elements */
+    align-items: center;
+    margin-top: 20px;
+    /* Add padding between heading and labels */
+}
+
+.crop-form-container label {
+    font-weight: bold;
+    /* Make the labels bold */
+}
+
+.crop-form-container input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+    /* Make the placeholder text bold */
+}
+
+.crop-form-container button {
+    grid-column: span 2;
+    width: 100%;
+    padding: 1rem;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.crop-form-container button:hover {
+    background-color: #0056b3;
+}
