@@ -4,3 +4,44 @@
 .body{
     font-family: 'Poppins', sans-serif;
 }
+
+.home-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .links-container {
+    margin-top: 50px;
+    display: flex;
+  }
+  
+  .link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .link:hover {
+    background-color: #45a049;
+  }
+  
+  .link:active {
+    background-color: #3e8e41;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+    height: 500px;
+  }
+  

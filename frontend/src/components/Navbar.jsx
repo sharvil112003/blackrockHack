@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import GoogleTranslate from "./GoogleTranslate.jsx";
 import logo from "../assets/logo.png";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

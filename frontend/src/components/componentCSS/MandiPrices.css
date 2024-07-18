@@ -1,0 +1,50 @@
+.mandi-prices-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.mandi-prices-table th,
+.mandi-prices-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.filter-input,
+.filter-select {
+    padding: 8px;
+    border: 1px solid #000;
+    /* Add border color here */
+    border-radius: 4px;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+    outline: none;
+    border-color: #007BFF;
+    /* Add focus border color here */
+}
+
+button {
+    border: 1px solid #000;
+    /* Add border color to the button */
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    border-color: #007BFF;
+    /* Add focus border color to the button */
+}

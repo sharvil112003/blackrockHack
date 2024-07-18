@@ -6,7 +6,8 @@ import { Login } from "./pages/Auth/Login";
 import { Signup } from "./pages/Auth/Signup";
 import MandiPrices from "./components/MandiPrices";
 import Scholarship from "./pages/Scholarship";
-import GovScheme from "./pages/GovScheme"
+import GovScheme from "./pages/GovScheme";
+import CropForm from "./pages/CropForm";
 import Land from "./pages/Land";
 import LeaseLand from "./pages/LeaseLand";
 
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/scholarship" element={<Scholarship />} />
         <Route exact path="/land" element={<Land />} /> 
         <Route exact path="/leaseland" element={<LeaseLand />} /> 
+        <Route exact path="/cropForm" element={<CropForm />} />
       </Routes>
     </BrowserRouter>
   );
