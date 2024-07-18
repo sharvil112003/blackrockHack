@@ -7,9 +7,11 @@ const NewsTicker = () => {
 
   useEffect(() => {
     const fetchNews = async () => {
+      const apiKey = '1ce0d43aae0f45ea8ad5c2d077a1bcfd';
+      const url = `https://newsapi.org/v2/everything?q=agriculture+india&apiKey=${apiKey}`;
       try {
         const response = await fetch(
-          `https://newsapi.org/v2/everything?q=agriculture&apiKey=1ce0d43aae0f45ea8ad5c2d077a1bcfd`
+          url
         );
         const data = await response.json();
         if (data.status === 'ok') {

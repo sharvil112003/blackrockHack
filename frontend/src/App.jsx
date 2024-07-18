@@ -11,6 +11,8 @@ import CropForm from "./pages/CropForm";
 import FarmerInfoForm from "./pages/FarmerInfoForm";
 import BlogList from "./components/BlogList";
 import blogs from './data/Blogs';
+import Land from "./pages/Land";
+import LeaseLand from "./pages/LeaseLand";
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
         <Route exact path="/Login" element={<Login />} />
         <Route exact path="/Signup" element={<Signup />} />
         <Route exact path="/govtschemes" element={<GovScheme />} />
-        <Route path="/mandi-prices" element={<MandiPrices />} />
+        <Route exact path="/mandi-prices" element={<MandiPrices />} />
         <Route exact path="/scholarship" element={<Scholarship />} />
+        <Route exact path="/land" element={<Land />} /> 
+        <Route exact path="/leaseland" element={<LeaseLand />} /> 
         <Route exact path="/cropForm" element={<CropForm />} />
         <Route path="/farmerInfoForm" element={<FarmerInfoForm />} />
         <Route path="/blogs" element={<BlogList blogs={blogs} />} />

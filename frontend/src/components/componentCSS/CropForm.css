@@ -1,60 +1,53 @@
 .crop-form-container {
     max-width: 400px;
-    /* Reduced width */
     margin: 20px auto;
-    /* Centered with some top margin */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f5f5f5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Optional: Adds a subtle shadow */
 }
 
 .crop-form-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    /* Increased margin below the heading */
     font-weight: bold;
-    /* Make the heading bold */
     font-size: 1.5rem;
-    /* Increase font size */
 }
 
 .crop-form-container form {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1rem;
-    /* Space between form elements */
     align-items: center;
     margin-top: 20px;
-    /* Add padding between heading and labels */
 }
 
 .crop-form-container label {
     font-weight: bold;
-    /* Make the labels bold */
 }
 
 .crop-form-container input[type="text"] {
     width: 100%;
     padding: 0.5rem;
     font-weight: bold;
-    /* Make the placeholder text bold */
 }
 
 .crop-form-container button {
     grid-column: span 2;
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
     width: 100%;
-    height: 50px;
-    /* Set a fixed height for square shape */
-    background-color: #007bff;
-    color: white;
-    border: none;
     cursor: pointer;
-    text-align: center;
-    line-height: 50px;
-    /* Vertically center the text */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #007bff;
+    line-height: normal;
 }
 
 .crop-form-container button:hover {
