@@ -8,6 +8,9 @@ import MandiPrices from "./components/MandiPrices";
 import Scholarship from "./pages/Scholarship";
 import GovScheme from "./pages/GovScheme";
 import CropForm from "./pages/CropForm";
+import FarmerInfoForm from "./pages/FarmerInfoForm";
+import BlogList from "./components/BlogList";
+import blogs from './data/Blogs';
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
         <Route path="/mandi-prices" element={<MandiPrices />} />
         <Route exact path="/scholarship" element={<Scholarship />} />
         <Route exact path="/cropForm" element={<CropForm />} />
+        <Route path="/farmerInfoForm" element={<FarmerInfoForm />} />
+        <Route path="/blogs" element={<BlogList blogs={blogs} />} />
       </Routes>
     </BrowserRouter>
   );
