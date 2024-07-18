@@ -7,7 +7,7 @@ const SupportVideo = () => {
       <h2>Support for Women in Farming</h2>
       <iframe
         width="560"
-        height="315"
+        height="400"
         src="https://www.youtube.com/embed/rpry_aZWuWk?si=P3Z5UCq0a1t8q3Wz"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
